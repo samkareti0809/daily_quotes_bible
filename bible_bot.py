@@ -20,60 +20,41 @@ START_DATE = datetime(2026, 9, 27).date()
 
 # --- THE 7-DAY REFLECTION PLAN (Joshua 1:9) ---
 VERSE_PLAN = {
-    1: (
-        "📖 *Day 1: Memorization & Repetition*\n\n"
-        "> *“Be strong and courageous. Do not be afraid; do not be discouraged,"
-        " for the Lord your God will be with you wherever you go.”* — Joshua"
-        " 1:9\n\n*Action:* Read the verse out loud five times this morning and"
-        " five times tonight. Get the words fixed firmly in your mind."
-    ),
-    2: (
-        "📖 *Day 2: Deconstruct the Key Words*\n\n"
-        "> *“Be strong and courageous. Do not be afraid; do not be discouraged,"
-        " for the Lord your God will be with you wherever you go.”* — Joshua"
-        " 1:9\n\n*Action:* Focus on the words *strong*, *courageous*, *afraid*, and"
-        " *discouraged*. Acknowledge that fear is normal, but courage is a"
-        " choice fueled by God."
-    ),
-    3: (
-        "📖 *Day 3: Personalize the Promise*\n\n"
-        "> *“Be strong and courageous. Do not be afraid; do not be discouraged,"
-        " for the Lord your God will be with you wherever you go.”* — Joshua"
-        " 1:9\n\n*Action:* Re-read the verse today inserting your own name or"
-        " current situation into it. Remind yourself He is actively with"
-        " *you*."
-    ),
-    4: (
-        "📖 *Day 4: Connect to Past Faithfulness*\n\n"
-        "> *“Be strong and courageous. Do not be afraid; do not be discouraged,"
-        " for the Lord your God will be with you wherever you go.”* — Joshua"
-        " 1:9\n\n*Action:* Spend a few minutes thinking about a past moment when"
-        " you felt overwhelmed, but God carried you through safely."
-    ),
-    5: (
-        "📖 *Day 5: Turn the Verse into a Prayer*\n\n"
-        "> *“Be strong and courageous. Do not be afraid; do not be discouraged,"
-        " for the Lord your God will be with you wherever you go.”* — Joshua"
-        " 1:9\n\n*Action:* Pray the verse back to God: *"
-        "Lord, because You are with me wherever I go, I choose not to be"
-        " afraid today..."*
-    ),
-    6: (
-        "📖 *Day 6: Practical Application*\n\n"
-        "> *“Be strong and courageous. Do not be afraid; do not be discouraged,"
-        " for the Lord your God will be with you wherever you go.”* — Joshua"
-        " 1:9\n\n*Action:* Identify one specific situation today where you feel"
-        " anxious. Step into it consciously repeating this verse as your"
-        " anchor."
-    ),
-    7: (
-        "📖 *Day 7: Review & Harvest*\n\n"
-        "> *“Be strong and courageous. Do not be afraid; do not be discouraged,"
-        " for the Lord your God will be with you wherever you go.”* — Joshua"
-        " 1:9\n\n*Action:* Recite the verse from memory. Reflect on how"
-        " spending a full week with this single truth has shifted your"
-        " mindset."
-    ),
+    1: """📖 *Day 1: Memorization & Repetition*
+
+> *“Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”* — Joshua 1:9
+
+*Action:* Read the verse out loud five times this morning and five times tonight. Get the words fixed firmly in your mind.""",
+    2: """📖 *Day 2: Deconstruct the Key Words*
+
+> *“Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”* — Joshua 1:9
+
+*Action:* Focus on the words *strong*, *courageous*, *afraid*, and *discouraged*. Acknowledge that fear is normal, but courage is a choice fueled by God.""",
+    3: """📖 *Day 3: Personalize the Promise*
+
+> *“Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”* — Joshua 1:9
+
+*Action:* Re-read the verse today inserting your own name or current situation into it. Remind yourself He is actively with *you*.""",
+    4: """📖 *Day 4: Connect to Past Faithfulness*
+
+> *“Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”* — Joshua 1:9
+
+*Action:* Spend a few minutes thinking about a past moment when you felt overwhelmed, but God carried you through safely.""",
+    5: """📖 *Day 5: Turn the Verse into a Prayer*
+
+> *“Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”* — Joshua 1:9
+
+*Action:* Pray the verse back to God: *"Lord, because You are with me wherever I go, I choose not to be afraid today..."*""",
+    6: """📖 *Day 6: Practical Application*
+
+> *“Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”* — Joshua 1:9
+
+*Action:* Identify one specific situation today where you feel anxious. Step into it consciously repeating this verse as your anchor.""",
+    7: """📖 *Day 7: Review & Harvest*
+
+> *“Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.”* — Joshua 1:9
+
+*Action:* Recite the verse from memory. Reflect on how spending a full week with this single truth has shifted your mindset.""",
 }
 
 
