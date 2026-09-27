@@ -1,10 +1,19 @@
 from datetime import datetime
 import os
+import sys
 import requests
 
 # --- CONFIGURATION ---
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
+
+# Check if secrets are loaded properly
+if not BOT_TOKEN or not CHAT_ID:
+  print(
+      "❌ Error: BOT_TOKEN or CHAT_ID are missing! Make sure you added them"
+      " to GitHub Repository Secrets."
+  )
+  sys.exit(1)
 
 # Set the anchor start date for Day 1 of your cycle (Year, Month, Day)
 START_DATE = datetime(2026, 9, 27).date()
@@ -72,15 +81,16 @@ def send_telegram_message(message):
   url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
   payload = {"chat_id": CHAT_ID, "text": message, "parse_mode": "Markdown"}
   response = requests.post(url, json=payload)
+
   if response.status_code == 200:
     print("Daily reflection sent successfully!")
   else:
-    print(f"Failed to send message: {response.text}")
+    print(f"❌ Failed to send message to Telegram: {response.text}")
+    sys.exit(1)
 
 
 if __name__ == "__main__":
   today = datetime.now().date()
-  # Automatically cycle through Day 1 to 7 based on elapsed days
   days_elapsed = (today - START_DATE).days
   current_day = (days_elapsed % 7) + 1
 
